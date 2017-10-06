@@ -70,7 +70,7 @@ extension TableViewController:UITableViewDataSource{
         let cellIdentifier = "londonLandmarkCell"
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? LondonLandmarkCell  else {
-            fatalError("The dequeued cell is not an instance of MealTableViewCell.")
+            fatalError("The dequeued cell is not an instance of LondonLandmarkCell.")
         }
         
         let landmark = londonLandmarks[indexPath.row]
